@@ -2,6 +2,6 @@
 
 Example of AI Assisted development
 
-# Commands
+## Commands
 
 - `npm start`: Runs the app

@@ -17,14 +17,21 @@
   "scripts": {
     "start": "tsx --watch src/main.ts",
     "test": "vitest",
-    "check": "npm run check:types && npm run check:prettier",
+    "check": "npm run check:types && npm run check:prettier && npm run check:lint",
+    "check:lint": "eslint . --ext .ts",
     "check:types": "tsc --noEmit",
     "check:prettier": "npx prettier --check ."
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@eslint/markdown": "^8.0.1",
+    "eslint": "^10.4.0",
+    "globals": "^17.6.0",
+    "jiti": "^2.7.0",
     "prettier": "^3.8.3",
     "tsx": "^4.22.3",
     "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.4",
     "vitest": "^4.1.6"
   },
   "dependencies": {

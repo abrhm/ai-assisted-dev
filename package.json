@@ -16,9 +16,13 @@
   "main": "src/main.js",
   "scripts": {
     "start": "tsx --watch src/main.ts",
-    "test": "vitest"
+    "test": "vitest",
+    "check": "npm run check:types && npm run check:prettier",
+    "check:types": "tsc --noEmit",
+    "check:prettier": "npx prettier --check ."
   },
   "devDependencies": {
+    "prettier": "^3.8.3",
     "tsx": "^4.22.3",
     "typescript": "^6.0.3",
     "vitest": "^4.1.6"

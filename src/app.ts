@@ -12,11 +12,15 @@ await app.register(swagger, {
 
 await app.register(swaggerUi, { routePrefix: '/docs' });
 
-app.get('/', {
-  schema: {
-    summary: 'Hello world',
-    response: { 200: { type: 'string' } },
+app.get(
+  '/',
+  {
+    schema: {
+      summary: 'Hello world',
+      response: { 200: { type: 'string' } },
+    },
   },
-}, async () => 'Hello, World!');
+  async () => 'Hello, World!'
+);
 
 export default app;

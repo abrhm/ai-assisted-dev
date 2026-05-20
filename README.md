@@ -1,6 +1,6 @@
 # ai-assisted-dev
 
-Example of AI Assisted development
+A polling api where users can create polls with multiple options, vote on open polls, close polls to stop further voting, and track which polls they haven't voted on yet.
 
 ## User Stories
 

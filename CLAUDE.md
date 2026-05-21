@@ -26,6 +26,7 @@ Fastify v5 REST API for a polling app. TypeScript + ESM throughout.
 - `src/main.ts` — entry point, starts server on port 3000
 - `src/app.ts` — Fastify app factory, registers Swagger UI at `/docs`
 - `src/app.test.ts` — Vitest tests (node env, beforeAll/afterAll for app lifecycle)
+- `src/routes/` — route files, one per file (see `.claude/rules/routes.md`)
 
 ## Key Config
 

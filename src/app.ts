@@ -1,6 +1,7 @@
 import Fastify from 'fastify';
 import swagger from '@fastify/swagger';
 import swaggerUi from '@fastify/swagger-ui';
+import { schema, handler } from './routes/GetExampleRoute.js';
 
 const app = Fastify();
 
@@ -12,15 +13,6 @@ await app.register(swagger, {
 
 await app.register(swaggerUi, { routePrefix: '/docs' });
 
-app.get(
-  '/',
-  {
-    schema: {
-      summary: 'Hello world',
-      response: { 200: { type: 'string' } },
-    },
-  },
-  async () => 'Hello, World!'
-);
+app.get('/example', { schema }, handler);
 
 export default app;

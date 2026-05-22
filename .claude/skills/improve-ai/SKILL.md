@@ -13,7 +13,7 @@ User request: $ARGUMENTS
 ## Steps
 
 1. **Propose** changes and wait for confirmation:
-   ```
+   ```text
    Proposed changes to <file>:
    - <change 1>
    ```

@@ -10,6 +10,7 @@ paths:
 - Each file exports exactly two named exports:
   - `schema` — Fastify route schema
   - `handler` — Fastify route handler function with this signature:
+
     ```ts
     import { FastifyRequest, FastifyReply } from 'fastify';
 
@@ -17,4 +18,5 @@ paths:
       ...
     };
     ```
+
     Use `_request` / `_reply` when a param is unused to avoid lint errors.

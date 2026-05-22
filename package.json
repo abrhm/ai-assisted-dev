@@ -11,6 +11,9 @@
     "url": "git+https://github.com/abrhm/ai-assisted-dev.git"
   },
   "license": "ISC",
+  "engines": {
+    "node": "24.x"
+  },
   "author": "",
   "type": "module",
   "main": "src/main.js",
@@ -25,6 +28,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@eslint/markdown": "^8.0.1",
+    "@types/node": "^24.12.4",
     "eslint": "^10.4.0",
     "globals": "^17.6.0",
     "jiti": "^2.7.0",

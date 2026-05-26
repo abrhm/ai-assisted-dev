@@ -27,6 +27,7 @@ Fastify v5 REST API for a polling app. TypeScript + ESM throughout.
 - `src/app.ts` — Fastify app factory, registers Swagger UI at `/docs`
 - `src/app.test.ts` — Vitest tests (node env, beforeAll/afterAll for app lifecycle)
 - `src/routes/` — route files, one per file (see `.claude/rules/routes.md`)
+- `eslint-rules/` — custom ESLint rule files (one per file, each exports a `Linter.Config`)
 
 ## Key Config
 

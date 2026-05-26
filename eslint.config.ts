@@ -3,6 +3,7 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 import markdown from '@eslint/markdown';
 import { defineConfig } from 'eslint/config';
+import routeNaming from './eslint-rules/route-naming';
 
 export default defineConfig([
   {
@@ -27,4 +28,5 @@ export default defineConfig([
     language: 'markdown/gfm',
     extends: ['markdown/recommended'],
   },
+  routeNaming,
 ]);

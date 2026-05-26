@@ -29,6 +29,10 @@ Fastify v5 REST API for a polling app. TypeScript + ESM throughout.
 - `src/routes/` — route files, one per file (see `.claude/rules/routes.md`)
 - `eslint-rules/` — custom ESLint rule files (one per file, each exports a `Linter.Config`)
 
+## PR Plan
+
+If [`PLAN.md`](./PLAN.md) exists in the project root, read it at the start of every conversation. It contains the active PR plan — description, testable checkbox steps, and implementation notes. Unchecked steps are pending; only the user checks them off when satisfied.
+
 ## Key Config
 
 - TypeScript strict mode: `noUncheckedIndexedAccess`, `exactOptionalPropertyTypes`

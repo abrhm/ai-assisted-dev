@@ -1,6 +1,6 @@
 ---
 name: improve-lint
-description: Create a new ESLint rule in eslint-rules/, register it in eslint.config.ts, and keep .claude/rules/*.md and CLAUDE.md consistent with the new convention.
+description: Create or update ESLint rule in eslint-rules/, register it in eslint.config.ts, and keep .claude/rules/*.md and CLAUDE.md consistent with the new convention.
 argument-hint: <rule description, e.g. "enforce handler return type annotation">
 ---
 

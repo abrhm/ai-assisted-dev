@@ -1,7 +1,7 @@
 ---
 name: improve-ai
 description: Create or update Claude configuration files — CLAUDE.md, .claude/rules/*.md, or .claude/skills/*.md
-argument-hint: <what to improve, e.g. "create rule for controllers">
+argument-hint: <what to improve, e.g. "create rule for services">
 ---
 
 # Improve AI Configuration

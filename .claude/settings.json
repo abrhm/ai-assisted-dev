@@ -14,6 +14,10 @@
           {
             "type": "command",
             "command": "npx tsx .claude/hooks/prettier.ts"
+          },
+          {
+            "type": "command",
+            "command": "npx tsx .claude/hooks/eslint.ts"
           }
         ]
       }

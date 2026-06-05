@@ -28,7 +28,7 @@ Examine the files for anything that seems off, contradictory, or out of sync. Ch
 
 Present a flat numbered list. For each finding:
 
-```
+```text
 1. Problem: Inconsistent command usage
    File(s):
     - `CLAUDE.md`: uses `pnpm be:lint`

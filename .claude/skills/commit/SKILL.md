@@ -8,6 +8,7 @@ Run the following to see what is staged:
 ```bash
 git diff --staged
 ```
+
 Never add a Co-Authored-By trailer to commit messages.
 Analyze the staged changes and suggest 3 commit message alternatives using the most fitting types from the conventional commits spec:
 
@@ -30,7 +31,7 @@ Rules for each suggestion:
 
 Present 3 alternatives based on the actual diff, varying in scope or emphasis:
 
-```
+```text
 1. <type>: <msg>
 2. <type>: <msg>
 3. <type>: <msg>

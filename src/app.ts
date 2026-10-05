@@ -1,7 +1,7 @@
 import Fastify from 'fastify';
 import swagger from '@fastify/swagger';
 import swaggerUi from '@fastify/swagger-ui';
-import { schema, handler } from './routes/GetExampleRoute.js';
+import { schema, handler } from './routes/ExampleRoute.js';
 
 const app = Fastify();
 

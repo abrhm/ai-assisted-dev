@@ -38,3 +38,6 @@ If [`PLAN.md`](./PLAN.md) exists in the project root, read it at the start of ev
 - TypeScript strict mode: `noUncheckedIndexedAccess`, `exactOptionalPropertyTypes`
 - ESLint flat config (`eslint.config.ts`), covers `.ts` and markdown
 - Prettier: 80-char, single quotes, trailing commas (ES5), 2-space indent
+
+## References
+[Rule: Routes](.claude/rules/routes.md)

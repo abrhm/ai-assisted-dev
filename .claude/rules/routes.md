@@ -1,6 +1,6 @@
 ---
 paths:
-  - src/routes/**
+  - src/routes/**/*
 ---
 
 # Route Conventions
@@ -10,13 +10,18 @@ paths:
 - Each file exports exactly two named exports:
   - `schema` — Fastify route schema
   - `handler` — Fastify route handler function with this signature:
+  - Use `_request` when a param is unused to avoid lint errors.
 
-    ```ts
-    import { FastifyRequest, FastifyReply } from 'fastify';
+## Example
+```ts
+import { FastifyRequest, FastifyReply } from 'fastify';
 
-    export const handler = async (request: FastifyRequest, reply: FastifyReply) => {
-      ...
-    };
-    ```
+export const schema = {
+  summary: 'Healthcheck',
+  response: { 200: { type: 'string' } },
+};
 
-    Use `_request` / `_reply` when a param is unused to avoid lint errors.
+export const handler = async (_request: FastifyRequest, reply: FastifyReply) => {
+  ...
+};
+```
